@@ -7,7 +7,7 @@ def calculate_s(t: float):
     return numpy.emath.log(numpy.fabs(1.3+t)) - numpy.power(numpy.e, t)
 
 
-def matplotlib_ex():
+def exercise_3_1():
     t_values = numpy.arange(2, 3, 0.03, dtype=float)
     s_values = numpy.array([calculate_s(t) for t in t_values])
 
@@ -23,3 +23,12 @@ def matplotlib_ex():
           f"s_min = {min_s}\n"
           f"Количество элементов: {numpy.size(s_values)}\n"
           f"")
+
+
+def exercise_3_2():
+    pass
+
+
+def matplotlib_ex():
+    exercise_3_1()
+    exercise_3_2()
